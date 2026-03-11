@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第12回｜レイヤースタイル</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 12 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">テキスト</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>レイヤースタイル<br><em>文字や図形に効果をつけよう</em></h1>
+    <div class="hero-goal"><span class="gi">🎯</span><span>この授業が終わったら：レイヤースタイルでドロップシャドウ・光彩・境界線・グラデーションオーバーレイを設定してデザインにメリハリをつけられるようになる</span></div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（テキストツール）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">レイヤースタイルの開き方・ドロップシャドウ</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">境界線・光彩・グラデーションオーバーレイ</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">スタイルを組み合わせてバナー文字を仕上げる練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body"><strong>講師がこう話す</strong>「前回はテキストツール・フォント・サイズ・行間の設定を学びました。今日の前に確認しましょう。」</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>T キー</strong>　テキストツール</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+Enter</strong>　テキスト入力を確定</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>文字パネル</strong>　行間・文字間隔の設定</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">レイヤースタイルを開く</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">レイヤースタイルは文字や図形に影・光彩・境界線などの視覚効果を追加できる機能です。バナーのタイトル文字を目立たせるときに必須です。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「レイヤースタイルはレイヤーパネルでレイヤーをダブルクリックするだけで開けます。効果を重ね掛けできるので、影+境界線+グラデーションのように複数同時に使えます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーパネルでレイヤーをダブルクリック</div>
+          <div class='step-desc'>レイヤースタイルダイアログが開く</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">または「レイヤー」メニュー→「レイヤースタイル」→効果を選ぶ</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">左のリストから「ドロップシャドウ」をクリック</div>
+          <div class='step-desc'>右側に設定項目が表示される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">不透明度・角度・距離・サイズを調整してOK</div>
+          <div class='step-desc'>プレビューをオンにするとリアルタイムで確認できる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　レイヤースタイルはレイヤーに紐づいているので、レイヤーを移動・拡大縮小しても効果が追従する。後から何度でも編集できる非破壊編集の一つ。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">境界線・光彩</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">境界線は文字の縁取り、光彩は文字の周囲を光らせる効果です。背景と文字の色が似ている場合でも視認性を確保できます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「バナーでよく使うのが白文字＋黒い境界線の組み合わせです。どんな背景色でも文字が読めるようになります。境界線は太くしすぎず1〜3pxが上品に見えます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">レイヤースタイルで「境界線」を選択</div>
+          <div class='step-desc'>サイズ（px）・位置・カラーを設定する</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">位置は「外側」を選ぶと綺麗に見えやすい</div>
+          <div class='step-desc'>内側・中央・外側の3種類がある</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">「光彩（外側）」を選択</div>
+          <div class='step-desc'>色・不透明度・サイズを設定する</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">発光感を出すには不透明度75%・サイズ10px程度から試す</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　境界線の色は背景色に近い色にするとナチュラルな仕上がりになる。文字色と正反対の色にすると目立つが安っぽくなりやすいので注意。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">グラデーションオーバーレイ</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">グラデーションオーバーレイで文字や図形にグラデーションカラーを適用できます。単色より豪華な印象になります。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「グラデーションオーバーレイは金色・銀色の文字を作るときに使います。2色のグラデーションでもリッチな印象になります。角度を変えると印象が大きく変わります。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">レイヤースタイルで「グラデーションオーバーレイ」を選択</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">グラデーションのプレビューをクリックして色を設定</div>
+          <div class='step-desc'>カラーストップをダブルクリックして色を変える</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">スタイル（線形・円形・角度）と角度を設定</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">「レイヤーとリンク」をオンにするとレイヤー移動に追従する</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　グラデーションオーバーレイは通常の塗りと重なる。塗りの不透明度を0%にしてグラデーションオーバーレイだけ使うとグラデーション文字が作れる。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">レイヤースタイルダイアログを開く最も速い方法はどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．メニューバーから開く</div>
+        <div class="quiz-option correct">B．レイヤーパネルでレイヤーをダブルクリック ✅</div>
+        <div class="quiz-option wrong">C．ツールパネルから開く</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">境界線の位置で最も綺麗に見えやすいのはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．内側</div>
+        <div class="quiz-option wrong">B．中央</div>
+        <div class="quiz-option correct">C．外側 ✅</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">文字にグラデーションカラーを適用するには何を使う？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．グラデーションツール</div>
+        <div class="quiz-option correct">B．グラデーションオーバーレイ ✅</div>
+        <div class="quiz-option wrong">C．カラーオーバーレイ</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body"><strong>全問正解できたらOK！</strong>ショートカットは実際に手を動かして覚えましょう。</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>ダブルクリック</strong>　レイヤーパネルでダブルクリックしてスタイルを開く</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>ドロップシャドウ</strong>　文字・図形に影をつける</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>境界線</strong>　文字・図形の縁取り。外側がきれい</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>光彩（外側）</strong>　文字の周囲を光らせる効果</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>グラデーションオーバーレイ</strong>　文字・図形にグラデーションカラーを適用</div>
+      </div>
+    </div>
+  </div>
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">白文字に黒い境界線2pxとドロップシャドウを組み合わせて視認性の高い文字を作ろう。</div>
+    <div class="extra-item">金色っぽい文字をグラデーションオーバーレイで作ってみよう（#B8860B → #FFD700）。</div>
+    <div class="extra-item">レイヤースタイルを別のレイヤーにコピーする方法を調べてみよう（Alt+ドラッグ）。</div>
+  </div>
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第12回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+</div>
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

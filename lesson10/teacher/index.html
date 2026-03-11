@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第10回｜移動・変形ツール</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 10 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">ツール</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>移動・変形ツール<br><em>オブジェクトを自由に動かして整えよう</em></h1>
+    <div class="hero-goal">
+      <span class="gi">🎯</span>
+      <span>この授業が終わったら：移動ツールで要素を配置し、自由変形で拡大縮小・回転・変形ができ、整列機能でレイアウトを整えられるようになる</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- タイムライン -->
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（塗りつぶし・グラデーション）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">移動ツールの使い方と整列</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">自由変形（Ctrl+T）で拡大縮小・回転</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">ゆがみ・遠近法変形の練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前回は塗りつぶし・グラデーション・カラーピッカーの操作を学びました。今日の授業の前に確認しましょう。」
+      </div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Alt+Delete</strong>　前景色で塗りつぶし</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>X キー</strong>　前景色と背景色を入れ替え</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>G キー</strong>　グラデーションツール</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">移動ツールと整列</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">移動ツールはレイヤー上のオブジェクトを移動するツールです。複数レイヤーを選択して整列機能を使うと、要素を綺麗に揃えられます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「移動ツールはV キーで切り替えられます。バナー制作でテキストや画像の位置を調整するときに一番使うツールです。自動選択をオンにしておくとクリックするだけで対象レイヤーを選べます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">移動ツール（V）を選ぶ</div>
+          <div class='step-desc'>キーボードの V を押すと切り替わる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーを選択してドラッグで移動</div>
+          <div class='step-desc'>矢印キーでも1px単位で移動できる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">Shift+矢印キーで10px単位で移動</div>
+          <div class='step-desc'>細かい位置調整に便利</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">複数レイヤーを選択して整列：オプションバーの整列ボタン</div>
+          <div class='step-desc'>Ctrl+クリックで複数選択。上端・中央・下端などに揃えられる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　オプションバーの「自動選択」をオンにすると、V ツールでキャンバス上のオブジェクトをクリックするだけでそのレイヤーが自動で選択される。作業効率が大幅に上がる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">自由変形（Ctrl+T）</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">自由変形はPhotoshopで最もよく使う操作の一つです。拡大縮小・回転・傾けなど様々な変形ができます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「Ctrl+Tは絶対覚えてください。バナー制作で画像や文字のサイズを変えるときに毎回使います。変形後はEnterで確定、Escでキャンセルです。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーを選択して Ctrl+T（Mac：⌘+T）</div>
+          <div class='step-desc'>変形ハンドル（8つの点）が表示される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">コーナーハンドルをドラッグして拡大縮小</div>
+          <div class='step-desc'>Shift+ドラッグで縦横比を維持（旧バージョン）。新バージョンはデフォルトで維持</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">枠の外側をドラッグして回転</div>
+          <div class='step-desc'>Shift+ドラッグで15°単位で回転</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">Enter で確定・Esc でキャンセル</div>
+          <div class='step-desc'>確定前はやり直せる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　変形するときは必ずスマートオブジェクトにしてから（レイヤーを右クリック→スマートオブジェクトに変換）。通常レイヤーを縮小→拡大すると画質が劣化する。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 4 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">ワープ・遠近法変形</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">自由変形にはワープや遠近法など高度な変形モードもあります。バナーに素材を貼り込むときの角度合わせなどに使います。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「ワープは商品パッケージや看板にデザインを当て込む（モックアップ）ときによく使います。最初は難しく感じますが慣れると非常に便利です。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">Ctrl+T で変形モードに入る</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">右クリックで変形オプションメニューを表示</div>
+          <div class='step-desc'>ゆがみ・遠近法・ワープ・水平方向に反転などが選べる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">「ワープ」を選択：グリッドが表示される</div>
+          <div class='step-desc'>グリッドの交点や線をドラッグして形を変形させる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">Enter で確定</div>
+          <div class='step-desc'>Esc でキャンセル</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　「水平方向に反転」「垂直方向に反転」は素材を反転させるときに便利。Ctrl+T→右クリック→反転で一発でできる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ クイズ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">自由変形のショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+D</div>
+        <div class="quiz-option correct">B．Ctrl+T ✅</div>
+        <div class="quiz-option wrong">C．Ctrl+E</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">移動ツールのショートカットキーはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．M</div>
+        <div class="quiz-option correct">B．V ✅</div>
+        <div class="quiz-option wrong">C．B</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">自由変形中に回転するにはどうする？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．変形ハンドルをドラッグ</div>
+        <div class="quiz-option correct">B．枠の外側をドラッグ ✅</div>
+        <div class="quiz-option wrong">C．Ctrl+ドラッグ</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body">
+        <strong>全問正解できたらOK！</strong>
+        今日の内容はバナー制作で必ず使います。ショートカットは実際に手を動かして覚えましょう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ まとめ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>V キー</strong>　移動ツールに切り替え
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Ctrl+T</strong>　自由変形モードに入る
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Enter</strong>　変形を確定
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Esc</strong>　変形をキャンセル
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Shift+矢印キー</strong>　10px単位で移動
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加課題 -->
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">複数のレイヤーを選択して整列ボタンで中央揃えをしてみよう。</div>
+    <div class="extra-item">画像をスマートオブジェクトに変換してから拡大縮小を繰り返して、画質が劣化しないことを確認しよう。</div>
+    <div class="extra-item">ワープを使って画像を曲げてみよう（旗がはためくような変形）。</div>
+  </div>
+
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第10回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+
+</div>
+
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

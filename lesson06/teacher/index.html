@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6回｜選択ツール①</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 06 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">ツール</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>選択ツール①<br><em>長方形・楕円形選択ツールを使いこなそう</em></h1>
+    <div class="hero-goal">
+      <span class="gi">🎯</span>
+      <span>この授業が終わったら：長方形・楕円形選択ツールで正確に選択範囲を作り、移動・削除・塗りつぶしができるようになる</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- タイムライン -->
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（レイヤーの基本）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">長方形選択ツールの使い方</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">楕円形選択ツール・正円・正方形の作り方</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">選択範囲の追加・削除・移動の練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前回はレイヤーの概念・追加・削除・順序変更・グループ化を学びました。今日の授業の前に確認しましょう。」
+      </div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+J</strong>　レイヤーを複製するショートカット</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+G</strong>　レイヤーをグループ化</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>目玉アイコン</strong>　表示・非表示の切り替え</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">長方形選択ツール</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">選択ツールは「ここだけ編集する」という範囲を指定するツールです。長方形選択ツールはバナー制作で最もよく使う基本ツールです。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「選択範囲を作ることはPhotoshopの基本中の基本です。選択範囲の中だけに色を塗る・消す・移動するという操作をするために必ず使います。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">ツールパネルから長方形選択ツール（M）を選ぶ</div>
+          <div class='step-desc'>キーボードの M を押すと切り替わる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">ドラッグして選択範囲を作る</div>
+          <div class='step-desc'>点線（マーチングアント）が表示されたら選択完了</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">Shift+ドラッグで正方形を作る</div>
+          <div class='step-desc'>Shiftを押しながらドラッグすると縦横比が1:1に固定される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">選択解除：Ctrl+D（Mac：⌘+D）</div>
+          <div class='step-desc'>点線が消えて選択範囲が解除される</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　オプションバーの「スタイル」を「固定サイズ」にするとピクセル単位で正確なサイズの選択範囲が作れる。バナーの正確なエリア指定に便利。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">楕円形選択ツール</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">楕円形選択ツールで円形や楕円形の選択範囲を作れます。アイコンや丸いボタンを作るときによく使います。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「楕円形でも Shift を押すと正円が作れます。長方形と楕円形の使い方はほぼ同じなので、どちらかが使えるようになればもう一方もすぐ使えるようになります。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">M を押した後、ツールパネルを長押しして楕円形選択ツールを選ぶ</div>
+          <div class='step-desc'>または Shift+M で長方形と楕円形を切り替えられる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">ドラッグして楕円の選択範囲を作る</div>
+          <div class='step-desc'>Shift+ドラッグで正円になる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">Alt+ドラッグで中心から描く</div>
+          <div class='step-desc'>Mac：Option+ドラッグ。中心点を起点に描ける</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　Shift+Alt+ドラッグ（Mac：Shift+Option+ドラッグ）で中心から正円を描ける。これを覚えると正円のアイコン作成が楽になる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 4 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">選択範囲の追加・削除</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">一度作った選択範囲に追加したり、一部を削除したりすることができます。複雑な形の選択範囲を作るときに使います。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「オプションバーの4つのボタンか、Shift/Altキーで選択範囲の追加・削除ができます。これを使うと複数の四角や円を組み合わせた選択範囲が作れます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">選択範囲に追加：Shift を押しながらドラッグ</div>
+          <div class='step-desc'>既存の選択範囲に新しい選択範囲が追加される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">選択範囲から削除：Alt を押しながらドラッグ（Mac：Option）</div>
+          <div class='step-desc'>既存の選択範囲から重なった部分が削除される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">全選択：Ctrl+A（Mac：⌘+A）</div>
+          <div class='step-desc'>キャンバス全体を選択範囲にする</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　選択範囲を作ったら「選択範囲を反転」（Ctrl+Shift+I）も覚えておこう。主役以外の部分を選択するときに使う。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ クイズ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">長方形選択ツールで正方形を作るには？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．そのままドラッグする</div>
+        <div class="quiz-option correct">B．Shift を押しながらドラッグ ✅</div>
+        <div class="quiz-option wrong">C．Alt を押しながらドラッグ</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">選択範囲を解除するショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+Z</div>
+        <div class="quiz-option wrong">B．Ctrl+A</div>
+        <div class="quiz-option correct">C．Ctrl+D ✅</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">選択範囲に新しい範囲を追加するには？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Alt+ドラッグ</div>
+        <div class="quiz-option correct">B．Shift+ドラッグ ✅</div>
+        <div class="quiz-option wrong">C．Ctrl+ドラッグ</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body">
+        <strong>全問正解できたらOK！</strong>
+        今日の内容はバナー制作で必ず使います。ショートカットは実際に手を動かして覚えましょう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ まとめ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>M キー</strong>　長方形選択ツールに切り替え
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Shift+M</strong>　長方形と楕円形を切り替え
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Shift+ドラッグ</strong>　正方形・正円を作る
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Ctrl+D</strong>　選択範囲を解除
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Shift+ドラッグ（選択中）</strong>　選択範囲に追加
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加課題 -->
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">長方形と楕円形を組み合わせて「角丸四角形っぽい形」を選択範囲で作ってみよう。</div>
+    <div class="extra-item">選択範囲を作ってから塗りつぶし（Shift+F5）を使って色を塗る練習をしよう。</div>
+    <div class="extra-item">「選択範囲を変形」（Ctrl+T）で選択範囲のサイズを変更する練習をしよう。</div>
+  </div>
+
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第6回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+
+</div>
+
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

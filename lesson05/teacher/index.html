@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第5回｜レイヤーを理解しよう</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 05 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">基本</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>レイヤーを理解しよう<br><em>Photoshopの一番大切な概念</em></h1>
+    <div class="hero-goal">
+      <span class="gi">🎯</span>
+      <span>この授業が終わったら：レイヤーの概念を理解して、追加・削除・順序変更・表示非表示の操作ができるようになる</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- タイムライン -->
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（ズーム・手のひらツール）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">レイヤーの概念説明・パネルの見かた</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">レイヤーの追加・削除・順序変更を実際に操作</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">表示/非表示・名前変更・グループ化を練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前回はズームツール・手のひらツール・ナビゲーター操作を学びました。今日の授業の前に確認しましょう。」
+      </div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+＋ / Ctrl+－</strong>　拡大・縮小のショートカット</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Space キー</strong>　一時的に手のひらツールに切り替え</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+0</strong>　画面にフィット表示</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">レイヤーとは何か</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">レイヤーはPhotoshopで最も重要な概念です。透明なフィルムを重ねるイメージで、各レイヤーに別々の要素を置くことで、後から自由に編集できます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「レイヤーはアニメのセル画と同じです。背景・キャラクター・セリフをそれぞれ別のフィルムに描いて重ねている。だからキャラクターだけ動かしたり、セリフだけ変えたりできるんです。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「ウィンドウ」→「レイヤー」でレイヤーパネルを表示</div>
+          <div class='step-desc'>右下に表示される。F7キーでも開閉できる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーパネルの構成を確認</div>
+          <div class='step-desc'>サムネイル・レイヤー名・目玉アイコン（表示/非表示）が並んでいる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">新規レイヤーを作成：パネル下部の＋アイコンをクリック</div>
+          <div class='step-desc'>ショートカット：Ctrl+Shift+N（Mac：⌘+Shift+N）</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　新規ドキュメントを作ると「背景」レイヤーが自動で作られる。背景レイヤーは鍵マークがついていて移動・削除が制限されている。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">レイヤーの基本操作</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">レイヤーの基本操作を覚えましょう。追加・削除・順序変更ができると、バナー制作で複数の要素を自由に扱えるようになります。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「レイヤーの順序は上にあるものが前面に表示されます。文字を画像の上に乗せたいときは、文字レイヤーを画像レイヤーより上に置く。これが基本ルールです。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーを選択：レイヤーパネルでクリック</div>
+          <div class='step-desc'>選択中のレイヤーは青くハイライトされる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">順序変更：レイヤーをドラッグして上下に移動</div>
+          <div class='step-desc'>上にあるレイヤーほど前面（手前）に表示される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーを削除：選択してゴミ箱アイコン or Delete キー</div>
+          <div class='step-desc'>複数選択はCtrl+クリック（Mac：⌘+クリック）</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">レイヤーを複製：Ctrl+J（Mac：⌘+J）</div>
+          <div class='step-desc'>選択中のレイヤーのコピーがすぐ上に作られる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　レイヤーの複製（Ctrl+J）は非常によく使う。元のレイヤーを残しながら編集できるので、失敗しても戻せる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 4 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">表示・非表示とグループ化</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">目玉アイコンで表示/非表示を切り替えることで、特定のレイヤーを一時的に隠して作業できます。グループ化で複数のレイヤーをまとめて管理できます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「グループ化はレイヤーが増えてきたときの整理術です。バナー制作では『背景グループ』『テキストグループ』『ボタングループ』みたいに分けると管理しやすくなります。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">表示/非表示：レイヤーパネルの目玉アイコンをクリック</div>
+          <div class='step-desc'>目玉が消えると非表示。キャンバスには表示されなくなる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">レイヤー名の変更：レイヤー名をダブルクリック</div>
+          <div class='step-desc'>わかりやすい名前をつけると後の作業が楽になる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">グループ化：Ctrl+G（Mac：⌘+G）</div>
+          <div class='step-desc'>複数のレイヤーを選択してからCtrl+Gでグループにまとめる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　レイヤー名は必ずつける習慣をつけよう。「レイヤー1」「レイヤー2」のままだと後で何がどこにあるかわからなくなる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ クイズ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">レイヤーパネルの目玉アイコンの役割はどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．レイヤーを削除する</div>
+        <div class="quiz-option correct">B．レイヤーの表示・非表示を切り替える ✅</div>
+        <div class="quiz-option wrong">C．レイヤーを複製する</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">レイヤーを複製するショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+C</div>
+        <div class="quiz-option correct">B．Ctrl+J ✅</div>
+        <div class="quiz-option wrong">C．Ctrl+D</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">レイヤーの順序について正しいのはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．下にあるレイヤーが前面に表示される</div>
+        <div class="quiz-option correct">B．上にあるレイヤーが前面に表示される ✅</div>
+        <div class="quiz-option wrong">C．順序は表示に関係ない</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body">
+        <strong>全問正解できたらOK！</strong>
+        今日の内容はバナー制作で必ず使います。ショートカットは実際に手を動かして覚えましょう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ まとめ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>レイヤー</strong>　透明なフィルムを重ねるイメージ。各要素を分けて管理する
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>目玉アイコン</strong>　レイヤーの表示・非表示を切り替える
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Ctrl+J</strong>　レイヤーを複製するショートカット
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Ctrl+G</strong>　選択したレイヤーをグループにまとめる
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>レイヤー名</strong>　必ずわかりやすい名前をつける習慣をつける
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加課題 -->
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">新規ドキュメントを作って、10枚レイヤーを作り、それぞれに名前をつけて整理してみよう。</div>
+    <div class="extra-item">レイヤーの順序を変えると表示がどう変わるか確認してみよう。</div>
+    <div class="extra-item">グループ化したレイヤーを展開・折りたたむ操作を練習しよう。</div>
+  </div>
+
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第5回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+
+</div>
+
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

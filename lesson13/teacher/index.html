@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第13回｜シェイプツール</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 13 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">シェイプ</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>シェイプツール<br><em>図形を描いてバナーのパーツを作ろう</em></h1>
+    <div class="hero-goal"><span class="gi">🎯</span><span>この授業が終わったら：長方形・楕円・多角形シェイプツールでボタンや背景パーツを作り、プロパティパネルで角丸や塗り・線を設定できるようになる</span></div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（レイヤースタイル）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">長方形・楕円シェイプツールの基本</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">角丸・塗り・線の設定</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">シェイプでバナーのボタンを作る練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body"><strong>講師がこう話す</strong>「前回はレイヤースタイル・ドロップシャドウ・境界線・グラデーションオーバーレイを学びました。今日の前に確認しましょう。」</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>ダブルクリック</strong>　レイヤーをダブルクリックでスタイルを開く</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>ドロップシャドウ</strong>　文字・図形に影をつける</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>グラデーションオーバーレイ</strong>　グラデーションカラーを適用</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">シェイプツールの基本</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">シェイプツールはベクター形式の図形を作れます。拡大縮小しても画質が劣化しないのが特徴で、バナーのボタンや背景パーツ作りに最適です。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「シェイプは選択ツールで作る選択範囲とは違います。シェイプは独立したレイヤーになるので後からサイズや色を自由に変えられます。ボタンやバッジを作るときに使います。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">長方形ツール（U）を選ぶ</div>
+          <div class='step-desc'>キーボードの U で切り替え。Shift+U でシェイプ種類を切り替え</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">オプションバーで「シェイプ」を選択（ピクセルやパスではなく）</div>
+          <div class='step-desc'>「シェイプ」モードになっているか確認する</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">ドラッグして長方形を描く</div>
+          <div class='step-desc'>Shift+ドラッグで正方形・Alt+ドラッグで中心から描く</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">描いたシェイプはシェイプレイヤーとして追加される</div>
+          <div class='step-desc'>レイヤーパネルに四角のサムネイルが表示される</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　シェイプはベクターデータなのでCtrl+T（自由変形）で何度拡大縮小しても画質が劣化しない。ロゴやボタンなどリサイズが必要なパーツはシェイプで作ろう。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">角丸・塗り・線の設定</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">プロパティパネルでシェイプの角丸半径・塗りの色・線の太さと色を設定できます。これらを組み合わせるとプロっぽいボタンが作れます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「角丸の半径は全体のサイズに対して10〜30%が自然に見えます。高さ40pxのボタンなら角丸は4〜12px程度。完全な円にしたいときは高さの半分の値を入力します。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">シェイプを選択して「ウィンドウ」→「プロパティ」を開く</div>
+          <div class='step-desc'>角丸半径を個別または一括で設定できる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">オプションバーの「塗り」をクリックして色を設定</div>
+          <div class='step-desc'>単色・グラデーション・パターンから選べる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">オプションバーの「線」をクリックして色と太さを設定</div>
+          <div class='step-desc'>線なしにしたいときは「/（なし）」を選ぶ</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">角丸半径を入力して角を丸める</div>
+          <div class='step-desc'>4角をリンクするか個別に設定するか選べる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　線（ストローク）の位置は内側・中央・外側から選べる。ボタンの場合は内側にすると正確なサイズを保てる。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">多角形・カスタムシェイプ</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">多角形ツールや星形ツール、カスタムシェイプツールで様々な形のパーツを作れます。バッジやアイコンを作るときに使います。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「カスタムシェイプツールには矢印・星・吹き出しなどのプリセットが大量に入っています。ゼロから描かなくてもこれを使えばすぐプロっぽいパーツが作れます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">U を長押しして多角形ツールを選択</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">オプションバーの辺の数を設定（3=三角形・5=五角形・6=六角形）</div>
+          <div class='step-desc'>星形にするには「星形」チェックをオン</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">カスタムシェイプツール（U長押し）を選択</div>
+          <div class='step-desc'>オプションバーのシェイププリセットから形を選ぶ</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">ドラッグして描く</div>
+          <div class='step-desc'>Shift+ドラッグで縦横比を固定</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　カスタムシェイプは「従来のシェイプとその他」を読み込むと矢印・吹き出し・フレームなど多数のプリセットが使えるようになる。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">シェイプツールのショートカットキーはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．S</div>
+        <div class="quiz-option correct">B．U ✅</div>
+        <div class="quiz-option wrong">C．P</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">シェイプをベクターとして作るためにオプションバーで選ぶモードはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．ピクセル</div>
+        <div class="quiz-option wrong">B．パス</div>
+        <div class="quiz-option correct">C．シェイプ ✅</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">角丸の設定はどこで行う？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．レイヤースタイル</div>
+        <div class="quiz-option correct">B．プロパティパネル ✅</div>
+        <div class="quiz-option wrong">C．文字パネル</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body"><strong>全問正解できたらOK！</strong>ショートカットは実際に手を動かして覚えましょう。</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>U キー</strong>　シェイプツールに切り替え</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>シェイプモード</strong>　オプションバーで「シェイプ」を選ぶ</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>プロパティパネル</strong>　角丸半径の設定</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>塗り・線</strong>　オプションバーで色と太さを設定</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>カスタムシェイプ</strong>　矢印・吹き出しなどプリセットが豊富</div>
+      </div>
+    </div>
+  </div>
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">角丸四角形でCTAボタン（例：「今すぐ申し込む」ボタン）を作ってみよう。</div>
+    <div class="extra-item">星形シェイプで「★ SALE ★」バッジを作ってみよう。</div>
+    <div class="extra-item">シェイプにグラデーションオーバーレイとドロップシャドウを組み合わせてみよう。</div>
+  </div>
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第13回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+</div>
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

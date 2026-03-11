@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3回｜画像を開いて保存しよう・ファイル形式を知ろう</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 03 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">基本</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>画像を開いて保存しよう<br><em>ファイル形式を知ろう</em></h1>
+    <div class="hero-goal">
+      <span class="gi">🎯</span>
+      <span>この授業が終わったら：画像を開く・保存する・目的に合ったファイル形式で書き出せるようになる</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- タイムライン -->
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（Web=72dpi・RGB、印刷=350dpi・CMYKの確認）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">画像の開きかたを3種類説明・一緒に操作</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">ファイル形式の違いを解説（PSD・JPEG・PNG・GIF）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">保存・書き出しを実際に操作して体験する</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前回はファイルのサイズと設定を覚えましたね。今日の授業の前に2つ確認します。Webバナーを作るとき、解像度は何dpiでしたか？　カラーモードは？」（生徒に答えてもらう。72dpi・RGBが出ればOK）
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">Web用は <strong>72dpi・RGB</strong>　印刷用は <strong>350dpi・CMYK</strong></div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">新規ドキュメントのショートカットは <strong>Ctrl+N</strong>（Mac：⌘+N）</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">よく使うバナーサイズ：<strong>300×250px</strong>・<strong>728×90px</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">画像を開いてみよう</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+
+    <p class="body-text">Photoshopで画像を開く方法は3つあります。どれを使っても同じ結果になりますが、状況に合わせて使い分けましょう。</p>
+
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「画像を開くのはPhotoshopの一番基本的な操作です。3つの方法を紹介しますが、普段使いは『ドラッグ＆ドロップ』が一番速くておすすめです。」
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:900;margin:24px 0 14px;">方法① メニューから開く</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「ファイル」→「開く」をクリック</div>
+          <div class="step-desc">またはショートカット <code style="background:#eee;padding:1px 6px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:12px;">Ctrl + O</code>（Mac：⌘+O）</div>
+          <div class="step-sub">💡 O は「Open（開く）」の頭文字</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">ファイル選択ダイアログが開く</div>
+          <div class="step-desc">開きたい画像ファイルを選んで「開く」をクリック。複数ファイルを選ぶときはCtrlを押しながらクリック。</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:900;margin:24px 0 14px;">方法② ドラッグ＆ドロップ（一番便利）</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">エクスプローラー（またはFinder）から画像をPhotoshopにドラッグ</div>
+          <div class="step-desc">Photoshopのウィンドウ上にファイルをドラッグ＆ドロップするだけで開く。キャンバスが開いている場合は「スマートオブジェクトとして配置」になるので注意。</div>
+          <div class="step-sub">⚠️ 既存のキャンバスに乗っかる場合は「ファイル→開く」を使う</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:900;margin:24px 0 14px;">方法③ Bridge・最近使ったファイルから開く</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「ファイル」→「最近使用したファイルを開く」</div>
+          <div class="step-desc">最近開いたファイルが一覧で表示される。よく使うファイルをすぐ開けるので便利。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ：練習用素材を事前に配布しておく</strong>
+        授業用の画像素材（JPEG1枚・PNG1枚）を事前にUSBやGoogle Driveで配布しておく。Unsplash（https://unsplash.com）からダウンロードしてもOK。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">ファイル形式の違いを知ろう</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+
+    <p class="body-text">Photoshopで扱うファイル形式は主に4種類です。それぞれ<strong>「何のために使うか」</strong>が違います。用途に合わせて使い分けましょう。</p>
+
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「ファイル形式って何種類もあって最初は混乱しますよね。でも覚えることはシンプルです。『作業中はPSD』『写真の完成品はJPEG』『透過が必要なときはPNG』この3つだけ最初は覚えてください。」
+      </div>
+    </div>
+
+    <!-- PSD -->
+    <div class="annotation-box" style="margin-top:20px;">
+      <div class="ann-marker" style="background:#31a8ff;">PSD</div>
+      <div class="ann-body">
+        <div class="ann-title">PSD（Photoshop Document）― 作業用ファイル</div>
+        <div class="ann-desc">Photoshop専用の形式です。レイヤー・マスク・調整レイヤーなど<strong>編集情報をすべて保持</strong>します。作業中は必ずPSDで保存しましょう。ファイルサイズは大きくなります。</div>
+        <div class="ann-tip">💡 「途中経過を残しておく」ためのファイル。完成後も必ずPSDを残しておくこと！</div>
+      </div>
+    </div>
+
+    <!-- JPEG -->
+    <div class="annotation-box" style="border-color:var(--orange);margin-top:12px;">
+      <div class="ann-marker" style="background:var(--orange);">JPG</div>
+      <div class="ann-body">
+        <div class="ann-title">JPEG（.jpg / .jpeg）― 写真・完成品向け</div>
+        <div class="ann-desc">写真に最適な形式です。<strong>ファイルサイズを小さく</strong>できますが、保存するたびに画質が劣化します（非可逆圧縮）。透過（背景を透明にする）には対応していません。</div>
+        <div class="ann-tip" style="background:var(--orange-s);color:var(--orange);">⚠️ 保存を繰り返すと画質が下がる。編集中はPSDで保存して、完成時だけJPEGで書き出すこと</div>
+      </div>
+    </div>
+
+    <!-- PNG -->
+    <div class="annotation-box" style="border-color:var(--green);margin-top:12px;">
+      <div class="ann-marker" style="background:var(--green);">PNG</div>
+      <div class="ann-body">
+        <div class="ann-title">PNG（.png）― 透過・ロゴ・アイコン向け</div>
+        <div class="ann-desc"><strong>透過（背景を透明にする）に対応</strong>しています。画質が劣化しない可逆圧縮です。ロゴ・アイコン・背景なしの素材に使います。JPEGより少しファイルサイズが大きくなりがちです。</div>
+        <div class="ann-tip" style="background:var(--green-s);color:var(--green);">💡 バナーに切り抜いた人物・商品を配置するときはPNGで書き出す</div>
+      </div>
+    </div>
+
+    <!-- GIF -->
+    <div class="annotation-box" style="border-color:#7a00c8;margin-top:12px;">
+      <div class="ann-marker" style="background:#7a00c8;">GIF</div>
+      <div class="ann-body">
+        <div class="ann-title">GIF（.gif）― アニメーション・シンプルな図向け</div>
+        <div class="ann-desc">最大256色しか使えませんが、<strong>アニメーションに対応</strong>しています。シンプルなアイコンや動くバナーに使います。写真には向きません（色数が少なすぎる）。</div>
+        <div class="ann-tip" style="background:#f3eeff;color:#7a00c8;">💡 動くバナーを作りたいときに登場する。今は「アニメーションできる」とだけ覚えておこう</div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 比較表 -->
+    <h3 style="font-size:16px;font-weight:900;margin:0 0 16px;">まとめ：どのファイル形式を使う？</h3>
+    <div style="display:flex;flex-direction:column;gap:8px;margin:16px 0;">
+
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:80px 1fr 1fr;gap:12px;align-items:center;box-shadow:var(--shadow);">
+        <div style="font-size:20px;font-weight:900;font-family:'JetBrains Mono',monospace;color:#31a8ff;">PSD</div>
+        <div style="font-size:13px;font-weight:700;">作業中・保存用</div>
+        <div style="font-size:13px;color:var(--muted);">レイヤーを保持。編集可能な状態で保存</div>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:80px 1fr 1fr;gap:12px;align-items:center;box-shadow:var(--shadow);">
+        <div style="font-size:20px;font-weight:900;font-family:'JetBrains Mono',monospace;color:var(--orange);">JPG</div>
+        <div style="font-size:13px;font-weight:700;">写真・背景あり完成品</div>
+        <div style="font-size:13px;color:var(--muted);">ファイルが小さい。透過不可</div>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:80px 1fr 1fr;gap:12px;align-items:center;box-shadow:var(--shadow);">
+        <div style="font-size:20px;font-weight:900;font-family:'JetBrains Mono',monospace;color:var(--green);">PNG</div>
+        <div style="font-size:13px;font-weight:700;">透過・ロゴ・アイコン</div>
+        <div style="font-size:13px;color:var(--muted);">背景を透明にできる。画質劣化なし</div>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:80px 1fr 1fr;gap:12px;align-items:center;box-shadow:var(--shadow);">
+        <div style="font-size:20px;font-weight:900;font-family:'JetBrains Mono',monospace;color:#7a00c8;">GIF</div>
+        <div style="font-size:13px;font-weight:700;">アニメーション</div>
+        <div style="font-size:13px;color:var(--muted);">動くバナーに使う。256色制限あり</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ：実物を見せながら説明する</strong>
+        同じ画像をJPEG・PNG・GIFで書き出して並べて見せると違いが直感的に伝わります。特にPNGの透過と、GIFの色数制限（写真がザラザラになる）は実際に見せると印象に残ります。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 4 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">保存・書き出しを体験しよう</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+
+    <p class="body-text">「保存」と「書き出し」は別物です。この違いをしっかり理解しましょう。</p>
+
+    <div class="callout warn">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-body">
+        <strong>「保存」と「書き出し」の違い</strong>
+        <strong>保存（Ctrl+S）</strong>はPSD形式で作業データを保存すること。<strong>書き出し</strong>はJPEG・PNGなど別の形式で完成品を出力すること。「上書き保存したらレイヤーが消えた！」という事故を防ぐために、この2つを混同しないようにしましょう。
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:900;margin:24px 0 14px;">① PSDで保存する（作業データの保存）</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">Ctrl+S（Mac：⌘+S）で上書き保存</div>
+          <div class="step-desc">初めて保存するときはダイアログが開くのでPSD形式を選ぶ。2回目以降はCtrl+Sで上書き保存される。</div>
+          <div class="step-sub">💡 こまめにCtrl+Sを押す習慣をつけよう。フリーズしたときに後悔しない</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">別名保存は Ctrl+Shift+S</div>
+          <div class="step-desc">バージョン違いを残したいときに使う（例：banner_v1.psd、banner_v2.psd）。元のファイルはそのまま残る。</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:16px;font-weight:900;margin:24px 0 14px;">② JPEG・PNGで書き出す（完成品の出力）</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「ファイル」→「書き出し」→「Web用に保存（従来）」</div>
+          <div class="step-desc">ショートカット：<code style="background:#eee;padding:1px 6px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:12px;">Ctrl+Alt+Shift+S</code>（Mac：⌘+Option+Shift+S）。プレビューを見ながらファイル形式・画質を調整できる。</div>
+          <div class="step-sub">💡 バナー制作の最終工程で必ず使う重要な操作</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">形式・画質を選んで「保存」</div>
+          <div class="step-desc">右上のプルダウンで「JPEG」「PNG-24」などを選ぶ。JPEGは画質スライダーで60〜80が画質とサイズのバランスがよい。</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">保存場所・ファイル名を決めて完了</div>
+          <div class="step-desc">わかりやすいフォルダに保存する。ファイル名は日本語・スペースを避けて英数字にするのがWeb制作のルール。</div>
+          <div class="step-sub">✅ 例：banner_300x250.jpg　❌ 例：バナー 300×250.jpg</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「ファイル名に日本語やスペースを使うと、Webにアップしたときに文字化けしたり表示されないことがあります。英数字・ハイフン・アンダースコアだけを使う習慣をつけてください。これはプロの現場でも必ず守るルールです。」
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 5 クイズ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num purple">5</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">レイヤー情報をすべて保持したまま保存できるファイル形式はどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option correct">A．PSD ✅</div>
+        <div class="quiz-option wrong">B．JPEG</div>
+        <div class="quiz-option wrong">C．PNG</div>
+      </div>
+    </div>
+
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">背景を透明（透過）にして書き出せるファイル形式はどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．JPEG</div>
+        <div class="quiz-option correct">B．PNG ✅</div>
+        <div class="quiz-option wrong">C．PSD（書き出しには使わない）</div>
+      </div>
+    </div>
+
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">Web用に書き出すショートカットはどれ？（Windows）</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+S</div>
+        <div class="quiz-option wrong">B．Ctrl+Shift+S</div>
+        <div class="quiz-option correct">C．Ctrl+Alt+Shift+S ✅</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body">
+        <strong>全問正解できたらOK！</strong>
+        今日の内容はバナー制作の最後の工程（書き出し）で必ず使います。特に「PSD=作業用・JPEG=写真完成品・PNG=透過あり」の3つはしっかり体で覚えましょう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ まとめ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">6</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>画像を開く方法は3つ</strong>　メニュー・ドラッグ＆ドロップ・最近使ったファイル
+          <div class="sub">普段はドラッグ＆ドロップが一番速い</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>PSD</strong>　作業用・レイヤー保持・編集可能
+          <div class="sub">作業中は必ずPSDで保存する</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>JPEG</strong>　写真・背景ありの完成品
+          <div class="sub">ファイルサイズ小・透過不可・繰り返し保存で劣化する</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>PNG</strong>　透過・ロゴ・アイコン
+          <div class="sub">背景を透明にできる・画質劣化なし</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>「保存」と「書き出し」は別物</strong>
+          <div class="sub">保存＝PSDで作業データ保存　書き出し＝JPEG・PNGで完成品を出力</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>ファイル名は英数字のみ</strong>
+          <div class="sub">日本語・スペースは使わない（Web制作の基本ルール）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加課題 -->
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">同じ画像をJPEG・PNG・GIFの3形式で書き出して、ファイルサイズを比べてみよう。どの形式が一番大きい？一番小さい？</div>
+    <div class="extra-item">JPEGの画質を10・50・100の3段階で書き出して、画質とファイルサイズの変化を確認しよう。</div>
+    <div class="extra-item">背景を透明にしてPNGで書き出す練習をしてみよう（背景レイヤーの目玉アイコンをオフにして書き出す）。</div>
+    <div class="extra-item">（中級者向け）「ファイル」→「書き出し」→「書き出し形式」も試してみよう。「Web用に保存（従来）」との違いを調べてみよう。</div>
+  </div>
+
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第3回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+
+</div>
+
+
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

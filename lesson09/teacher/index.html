@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第9回｜塗りつぶし・グラデーション</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 09 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">ツール</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>塗りつぶし・グラデーション<br><em>背景色とグラデーションでバナーの土台を作ろう</em></h1>
+    <div class="hero-goal">
+      <span class="gi">🎯</span>
+      <span>この授業が終わったら：塗りつぶしツールとグラデーションツールを使って背景を作り、バナーの土台となるカラー設定ができるようになる</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- タイムライン -->
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（ブラシ・消しゴム）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">カラーピッカー・前景色・背景色の設定</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">塗りつぶしツール・単色背景の作成</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">グラデーションツールでグラデーション背景を作成</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前回はブラシ・消しゴムツール・硬さと不透明度の調整を学びました。今日の授業の前に確認しましょう。」
+      </div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>B キー</strong>　ブラシツール</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>[ と ] キー</strong>　ブラシサイズ変更</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>E キー</strong>　消しゴムツール</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">カラーピッカーと前景色・背景色</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">Photoshopでは「前景色」と「背景色」という2つのカラー設定があります。塗りつぶし・ブラシなどほとんどのツールは前景色を使います。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「前景色と背景色、最初はわかりにくいですが『今使う色』が前景色と覚えてください。XキーでこのA2つを入れ替えられます。白と黒に戻したいときはDキーです。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">ツールパネル下部の四角（前景色）をクリック</div>
+          <div class='step-desc'>カラーピッカーが開く</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">カラーピッカーでHEX値を入力して色を決める</div>
+          <div class='step-desc'>例：#0046c8 を入力してOK</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">D キーで前景色=黒・背景色=白にリセット</div>
+          <div class='step-desc'>初期状態に戻したいときに使う</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">X キーで前景色と背景色を入れ替え</div>
+          <div class='step-desc'>素早く2色を切り替えながら作業できる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　HEX値（#で始まる6桁の英数字）で色を指定するとクライアントのブランドカラーを正確に再現できる。バナー制作では必須の操作。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">塗りつぶしツール</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">塗りつぶしツールで選択範囲やレイヤー全体を一色で塗りつぶせます。単色背景のバナーを作るときの基本操作です。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「Shift+F5の塗りつぶしが一番使いやすいです。選択範囲があればその中だけ、なければレイヤー全体を塗りつぶします。色の変更も後からすぐできます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">新規レイヤーを作成する（Ctrl+Shift+N）</div>
+          <div class='step-desc'>背景専用のレイヤーを作ると後から編集しやすい</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">塗りつぶしツール（G）を選ぶ、または Shift+F5</div>
+          <div class='step-desc'>Shift+F5は塗りつぶしダイアログが開く</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">前景色で塗りつぶし：Alt+Delete（Mac：Option+Delete）</div>
+          <div class='step-desc'>選択範囲があればその中、なければレイヤー全体</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">背景色で塗りつぶし：Ctrl+Delete（Mac：⌘+Delete）</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　Alt+Delete（前景色で塗りつぶし）とCtrl+Delete（背景色で塗りつぶし）は非常によく使うショートカット。体で覚えよう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 4 ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">グラデーションツール</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">グラデーションツールで2色以上の滑らかな色の変化を作れます。バナーの背景にグラデーションを使うとリッチな印象になります。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「グラデーションはドラッグの方向と長さで変わります。短くドラッグするとくっきりした変化、長くドラッグするとゆっくりした変化になります。試しながら感覚をつかんでください。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">グラデーションツール（G）を選ぶ</div>
+          <div class='step-desc'>塗りつぶしツールと同じ G キー。長押しで切り替え</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">オプションバーのグラデーションプレビューをクリックして色を設定</div>
+          <div class='step-desc'>左端と右端のカラーストップをダブルクリックして色を変更</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">キャンバス上をドラッグしてグラデーションを適用</div>
+          <div class='step-desc'>ドラッグの方向が色の変化の方向になる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">グラデーションの種類：線形・円形・角度・反射・菱形</div>
+          <div class='step-desc'>オプションバーのアイコンで切り替える</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　グラデーションは新しいレイヤーに適用しよう。直接背景レイヤーに描くと後から修正できなくなる。レイヤー分けが大事。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ クイズ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">前景色で塗りつぶすショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+Delete</div>
+        <div class="quiz-option correct">B．Alt+Delete ✅</div>
+        <div class="quiz-option wrong">C．Shift+Delete</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">前景色と背景色を入れ替えるショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．D キー</div>
+        <div class="quiz-option correct">B．X キー ✅</div>
+        <div class="quiz-option wrong">C．C キー</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">グラデーションツールのショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．B</div>
+        <div class="quiz-option wrong">B．E</div>
+        <div class="quiz-option correct">C．G ✅</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body">
+        <strong>全問正解できたらOK！</strong>
+        今日の内容はバナー制作で必ず使います。ショートカットは実際に手を動かして覚えましょう。
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ まとめ ═══ -->
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>D キー</strong>　前景色=黒・背景色=白にリセット
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>X キー</strong>　前景色と背景色を入れ替え
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Alt+Delete</strong>　前景色で塗りつぶし
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>Ctrl+Delete</strong>　背景色で塗りつぶし
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text">
+          <strong>G キー</strong>　グラデーション・塗りつぶしツールに切り替え
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 追加課題 -->
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">HEX値を使って会社のブランドカラーでバナー背景を作ってみよう。</div>
+    <div class="extra-item">線形・円形・菱形グラデーションの3種類を試して違いを確認しよう。</div>
+    <div class="extra-item">3色以上のグラデーションを作ってみよう（グラデーションエディターでカラーストップを追加）。</div>
+  </div>
+
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第9回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+
+</div>
+
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>
