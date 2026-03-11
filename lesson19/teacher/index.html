@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第19回｜ミニプロジェクト①</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 19 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">プロジェクト</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>ミニプロジェクト①<br><em>300×250バナーを作ってみよう</em></h1>
+    <div class="hero-goal"><span class="gi">🎯</span><span>この授業が終わったら：第1〜18回で学んだ技術を使って300×250pxのWebバナーを1枚完成させ、JPEGとPNGで書き出せるようになる</span></div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">制作するバナーの仕様説明</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜15分</div>
+        <div class="tl-label">新規ドキュメント作成・ガイド設定</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">15〜40分</div>
+        <div class="tl-label">バナー制作（背景・画像・テキスト・ボタン）</div>
+        <div class="tl-badge tb-check">制作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">40〜48分</div>
+        <div class="tl-label">書き出し・完成確認</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">48〜50分</div>
+        <div class="tl-label">まとめ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body"><strong>講師がこう話す</strong>「前回はショートカット・テキスト・シェイプ・カラー調整・レイアウト全般を学びました。今日の前に確認しましょう。」</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+N</strong>　新規ドキュメント作成</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+T</strong>　自由変形</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+Alt+Shift+S</strong>　Web用に書き出し</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">バナーの仕様と準備</div>
+      <div class="sec-time">5〜15分</div>
+    </div>
+    <p class="body-text">今回作るバナーの仕様を確認して、新規ドキュメントを作成します。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「今日のゴールは300×250pxのバナーを1枚完成させることです。完璧じゃなくていいです。とにかく最後まで作り切ることが大事です。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">Ctrl+N で新規ドキュメント作成</div>
+          <div class='step-desc'>サイズ：300×250px / 解像度：72dpi / カラーモード：RGB</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">左右20pxの余白ガイドを設定</div>
+          <div class='step-desc'>「表示」→「新規ガイドレイアウト」でマージン20pxを設定</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">使用する素材を確認（背景画像・ロゴなど）</div>
+          <div class='step-desc'>Unsplashなどからフリー素材をあらかじめダウンロード</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">レイヤー構成を計画する</div>
+          <div class='step-desc'>例：背景レイヤー・画像レイヤー・テキストレイヤー・ボタンレイヤー</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　先にレイヤー構成を決めてから作ると途中で混乱しにくい。「背景グループ」「テキストグループ」「ボタングループ」に分けるとわかりやすい。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">バナーの制作</div>
+      <div class="sec-time">15〜40分</div>
+    </div>
+    <p class="body-text">背景・メイン画像・テキスト・CTAボタンの順に作成していきます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「作る順番は背景から手前へ。背景→画像→テキスト→ボタンの順番で作ると積み重なるレイヤーの構造が自然と正しくなります。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">①背景を作る：グラデーションまたは単色で塗りつぶし</div>
+          <div class='step-desc'>調整レイヤーで色を変えられるようにしておくと便利</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">②メイン画像を配置：ファイルを開いてドラッグ＆ドロップ</div>
+          <div class='step-desc'>Ctrl+T でサイズ調整。スマートオブジェクトのまま使う</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">③テキストを入力：キャッチコピー・サブコピーを配置</div>
+          <div class='step-desc'>フォント・サイズ・色・行間を調整する</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">④CTAボタンを作る：シェイプ+テキストで作成</div>
+          <div class='step-desc'>角丸長方形に文字を重ねてグループ化する</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　完成品を見ながら「何が足りないか」を確認しよう。余白が少ない・文字が多い・色が統一されていないのがよくある失敗パターン。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">書き出しと完成</div>
+      <div class="sec-time">40〜48分</div>
+    </div>
+    <p class="body-text">完成したバナーをJPEGとPNGの2形式で書き出します。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「書き出し前に必ずPSDで保存してください。書き出したJPEGやPNGは完成品なので編集できません。元データのPSDは必ず残しておく習慣をつけましょう。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">まずCtrl+S でPSD保存</div>
+          <div class='step-desc'>作業データを必ず残す</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">Ctrl+Alt+Shift+S で「Web用に保存」を開く</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">JPEG形式・画質80でプレビューを確認してから保存</div>
+          <div class='step-desc'>ファイル名は英数字のみ</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">もう一度開いてPNG-24形式でも書き出し</div>
+          <div class='step-desc'>透明部分がある場合はPNG推奨</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　書き出したファイルはブラウザで開いて実際の表示を確認しよう。Photoshopで見た色と微妙に違う場合がある。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">バナー制作で最初に設定するべきことはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．フォントを選ぶ</div>
+        <div class="quiz-option correct">B．ドキュメントサイズと解像度 ✅</div>
+        <div class="quiz-option wrong">C．色を決める</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">作業データと完成品のファイル形式の正しい組み合わせはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．作業データ=JPEG・完成品=PSD</div>
+        <div class="quiz-option correct">B．作業データ=PSD・完成品=JPEG/PNG ✅</div>
+        <div class="quiz-option wrong">C．どちらもJPEGでよい</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">Web用バナーの解像度は何dpi？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．350dpi</div>
+        <div class="quiz-option wrong">B．150dpi</div>
+        <div class="quiz-option correct">C．72dpi ✅</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body"><strong>全問正解できたらOK！</strong>ショートカットは実際に手を動かして覚えましょう。</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>72dpi・RGB</strong>　Web用バナーの基本設定</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>レイヤー構成</strong>　先に計画してから作ると混乱しない</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>背景→画像→テキスト→ボタン</strong>　作る順番の基本</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>PSD保存</strong>　書き出し前に必ず作業データを保存</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+Alt+Shift+S</strong>　Web用に保存（書き出し）</div>
+      </div>
+    </div>
+  </div>
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">同じ内容で色違いバージョン（Aパターン・Bパターン）を作ってみよう。</div>
+    <div class="extra-item">728×90の横長バナーも同じ素材を使って作ってみよう。</div>
+    <div class="extra-item">できたバナーを家族や友達に見せてフィードバックをもらおう。</div>
+  </div>
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第19回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+</div>
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

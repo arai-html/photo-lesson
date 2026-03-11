@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第17回｜整列・ガイド・グリッド</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-lesson-num">LESSON 17 / 40</div>
+      <div class="hero-tags">
+        <span class="hero-tag ht-basic">レイアウト</span>
+        <span class="hero-tag ht-basic">一緒にやる</span>
+        <span class="hero-tag ht-time">⏱ 50分</span>
+      </div>
+    </div>
+    <h1>整列・ガイド・グリッド<br><em>レイアウトを正確に揃えよう</em></h1>
+    <div class="hero-goal"><span class="gi">🎯</span><span>この授業が終わったら：ガイドとグリッドを使って要素を正確に配置し、整列機能とスナップで複数の要素を綺麗に揃えられるようになる</span></div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">0〜5分</div>
+        <div class="tl-label">前回の復習（色理論・配色）</div>
+        <div class="tl-badge tb-talk">話す</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">5〜20分</div>
+        <div class="tl-label">ガイドの作成と使い方</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">20〜35分</div>
+        <div class="tl-label">グリッドとスナップの設定</div>
+        <div class="tl-badge tb-do">一緒に操作</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">35〜45分</div>
+        <div class="tl-label">整列機能で要素を揃える練習</div>
+        <div class="tl-badge tb-check">練習</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-row">
+        <div class="tl-time">45〜50分</div>
+        <div class="tl-label">まとめ・クイズ・質問タイム</div>
+        <div class="tl-badge tb-extra">まとめ</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-title">前回の復習</div>
+      <div class="sec-time">0〜5分</div>
+    </div>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body"><strong>講師がこう話す</strong>「前回は配色理論・Adobe Color・スウォッチの活用を学びました。今日の前に確認しましょう。」</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">✅ 前回の確認ポイント</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>補色・類似色</strong>　配色の基本ルール</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Adobe Color</strong>　配色パレット生成ツール</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>スウォッチ</strong>　色の登録と再利用</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-title">ガイドの作成と活用</div>
+      <div class="sec-time">5〜20分</div>
+    </div>
+    <p class="body-text">ガイドは画面上に表示される補助線です。要素を正確な位置に配置するときの目印になります。印刷・書き出しには表示されません。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「ガイドはルーラー（定規）からドラッグするだけで作れます。バナー制作では余白のガイドを最初に引いておくのがプロの習慣です。余白がないとチープに見えます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「表示」→「定規」でルーラーを表示（Ctrl+R）</div>
+          <div class='step-desc'>キャンバスの上と左に定規が表示される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">定規からキャンバスにドラッグするとガイドが作成される</div>
+          <div class='step-desc'>上の定規から→水平ガイド。左の定規から→垂直ガイド</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">ガイドの位置を数値で指定：「表示」→「ガイドを編集」</div>
+          <div class='step-desc'>正確な位置にガイドを配置できる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">ガイドを非表示：Ctrl+H（Mac：⌘+H）</div>
+          <div class='step-desc'>実際には削除されず表示/非表示が切り替わる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　「表示」→「新規ガイドレイアウト」を使うとマージン（余白）やカラム（列）を一括で設定できる。バナーサイズに合わせて左右に20pxの余白を設定するのがおすすめ。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num orange">3</div>
+      <div class="sec-title">グリッドとスナップ</div>
+      <div class="sec-time">20〜35分</div>
+    </div>
+    <p class="body-text">グリッドはキャンバス全体に等間隔の格子を表示します。スナップをオンにすると要素がガイドやグリッドに自動で吸い付くように配置されます。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「スナップは最初は煩わしく感じるかもしれませんが、慣れると整ったレイアウトを速く作れます。細かい微調整のときは一時的にCtrl+Shift+;でスナップをオフにしましょう。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">グリッドを表示：「表示」→「表示」→「グリッド」（Ctrl+'）</div>
+          
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">グリッドの間隔を設定：「編集」→「環境設定」→「ガイド・グリッド・スライス」</div>
+          <div class='step-desc'>間隔を8や16pxにすると8pxグリッドになる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">スナップをオン：「表示」→「スナップ」（Ctrl+Shift+;）</div>
+          <div class='step-desc'>スナップ先をガイド・グリッド・レイヤーなど選べる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">移動時に自動でガイドやグリッドに吸い付く</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　8pxグリッドはWebデザインのスタンダード。要素のサイズや余白を8の倍数（8・16・24・32px）にすると整ったレイアウトになりやすい。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num green">4</div>
+      <div class="sec-title">整列機能</div>
+      <div class="sec-time">35〜45分</div>
+    </div>
+    <p class="body-text">複数のレイヤーを選択して整列ボタンを使うと、要素を上端・中央・下端などに一発で揃えられます。手動で揃えるより速くて正確です。</p>
+    <div class="callout info">
+      <div class="callout-icon">💬</div>
+      <div class="callout-body">
+        <strong>講師がこう話す</strong>
+        「整列はバナー制作で毎回使います。テキストとボタンを中央揃えにしたり、3つのアイコンを等間隔に並べたりするときに一瞬で揃えられます。」
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">Ctrl+クリックで複数レイヤーを選択</div>
+          <div class='step-desc'>レイヤーパネルで選択してもよい</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">移動ツール（V）に切り替える</div>
+          <div class='step-desc'>オプションバーに整列ボタンが表示される</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">整列ボタンをクリック（左端揃え・中央揃え・右端揃えなど）</div>
+          <div class='step-desc'>水平・垂直どちらも揃えられる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">「等間隔に分布」ボタンで要素を均等配置</div>
+          <div class='step-desc'>3つ以上の要素を等間隔に並べられる</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">👆</div>
+      <div class="callout-body">
+        <strong>講師メモ</strong>　「カンバスに整列」モードにすると要素同士ではなくキャンバス全体を基準に揃えられる。要素をキャンバスの正中央に配置するときに使う。
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:var(--ps);">Q</div>
+      <div class="sec-title">確認クイズ</div>
+      <div class="sec-time">45〜50分</div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 1</div>
+      </div>
+      <div class="quiz-q">ルーラー（定規）を表示するショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．Ctrl+G</div>
+        <div class="quiz-option correct">B．Ctrl+R ✅</div>
+        <div class="quiz-option wrong">C．Ctrl+H</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 2</div>
+      </div>
+      <div class="quiz-q">スナップのオン・オフを切り替えるショートカットはどれ？</div>
+      <div class="quiz-options">
+        <div class="quiz-option correct">A．Ctrl+Shift+; ✅</div>
+        <div class="quiz-option wrong">B．Ctrl+Shift+H</div>
+        <div class="quiz-option wrong">C．Ctrl+Alt+;</div>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="quiz-header">
+        <div class="quiz-icon">❓</div>
+        <div class="quiz-title">クイズ 3</div>
+      </div>
+      <div class="quiz-q">3つの要素を等間隔に並べるには整列機能のどのボタンを使う？</div>
+      <div class="quiz-options">
+        <div class="quiz-option wrong">A．中央揃え</div>
+        <div class="quiz-option correct">B．等間隔に分布 ✅</div>
+        <div class="quiz-option wrong">C．左端揃え</div>
+      </div>
+    </div>
+    <div class="callout tip">
+      <div class="callout-icon">✅</div>
+      <div class="callout-body"><strong>全問正解できたらOK！</strong>ショートカットは実際に手を動かして覚えましょう。</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="sec-header">
+      <div class="sec-num" style="background:#888;">✓</div>
+      <div class="sec-title">今日のポイント まとめ</div>
+    </div>
+    <div class="checklist">
+      <div class="checklist-title">📋 今日覚えること チェックリスト</div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+R</strong>　ルーラー（定規）の表示・非表示</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>ガイド</strong>　ルーラーからドラッグして作る補助線</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>Ctrl+H</strong>　ガイドの表示・非表示</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>スナップ</strong>　要素がガイド・グリッドに自動で吸い付く</div>
+      </div>
+      <div class="check-item">
+        <div class="check-box"></div>
+        <div class="check-text"><strong>等間隔に分布</strong>　複数要素を均等な間隔で並べる</div>
+      </div>
+    </div>
+  </div>
+  <div class="extra-box">
+    <div class="extra-header">
+      <div class="extra-badge">🚀 EXTRA</div>
+      <div class="extra-title">早く終わった人向けの追加課題</div>
+    </div>
+    <div class="extra-item">バナーサイズに合わせて左右20pxの余白ガイドを設定してみよう。</div>
+    <div class="extra-item">5つの正方形を横一列に等間隔で並べてみよう（整列機能を使う）。</div>
+    <div class="extra-item">8pxグリッドを設定してスナップを使って要素を配置してみよう。</div>
+  </div>
+  <div style="height:40px;"></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">
+    第17回 / 全40回　｜　Photoshop バナー制作コース　©2026
+  </div>
+</div>
+</body>
+<script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script>
+</html>

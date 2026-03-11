@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>第26回｜描画モード</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<div class="hero"><div class="hero-inner"><div class="hero-top"><div class="hero-lesson-num">LESSON 26 / 40</div><div class="hero-tags"><span class="hero-tag ht-basic">合成</span><span class="hero-tag ht-basic">一緒にやる</span><span class="hero-tag ht-time">⏱ 50分</span></div></div><h1>描画モード<br><em>レイヤーの合成方法を変えて表現を広げよう</em></h1><div class="hero-goal"><span class="gi">🎯</span><span>この授業が終わったら：乗算・スクリーン・オーバーレイなど主要な描画モードを理解し、テクスチャ合成・光の演出・影の演出に活用できるようになる</span></div></div></div>
+<div class="wrap">
+  <div class="section-label" style="font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;">📅 50分の流れ</div>
+  <div class="timeline">    <div class="tl-item"><div class="tl-row"><div class="tl-time">0〜5分</div><div class="tl-label">前回の復習（フィルター②）</div><div class="tl-badge tb-talk">話す</div></div></div>
+    <div class="tl-item"><div class="tl-row"><div class="tl-time">5〜20分</div><div class="tl-label">描画モードの仕組みと主要モード解説</div><div class="tl-badge tb-talk">話す</div></div></div>
+    <div class="tl-item"><div class="tl-row"><div class="tl-time">20〜35分</div><div class="tl-label">乗算・スクリーン・オーバーレイの実践</div><div class="tl-badge tb-do">一緒に操作</div></div></div>
+    <div class="tl-item"><div class="tl-row"><div class="tl-time">35〜45分</div><div class="tl-label">描画モードを使ったテクスチャ合成練習</div><div class="tl-badge tb-check">練習</div></div></div>
+    <div class="tl-item"><div class="tl-row"><div class="tl-time">45〜50分</div><div class="tl-label">まとめ・クイズ</div><div class="tl-badge tb-extra">まとめ</div></div></div>
+</div>
+  <div class="section"><div class="sec-header"><div class="sec-num">1</div><div class="sec-title">前回の復習</div><div class="sec-time">0〜5分</div></div><div class="callout info"><div class="callout-icon">💬</div><div class="callout-body"><strong>講師がこう話す</strong>「前回はフィルター②・テクスチャ・ゆがみを学びました。今日の前に確認しましょう。」</div></div><div class="checklist"><div class="checklist-title">✅ 前回の確認ポイント</div>      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>フィルターギャラリー</strong>　芸術効果フィルターの重ね掛け</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>50%グレー+オーバーレイ</strong>　テクスチャ追加テクニック</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>スマートフィルター</strong>　後から変更できるフィルター</div></div>
+</div></div>
+  <div class="section"><div class="sec-header"><div class="sec-num">2</div><div class="sec-title">描画モードとは</div><div class="sec-time">5〜20分</div></div><p class="body-text">描画モードは上のレイヤーと下のレイヤーの色をどう合成するかを決める設定です。レイヤーパネル上部のプルダウンで変更できます。</p><div class="callout info"><div class="callout-icon">💬</div><div class="callout-body"><strong>講師がこう話す</strong> 「描画モードを変えるだけで全く違う見た目になります。最初は全種類覚えなくていいです。まず乗算・スクリーン・オーバーレイの3つだけ完璧に覚えてください。」</div></div><div class="steps">      <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">レイヤーを選択してレイヤーパネル上部の「通常」プルダウンをクリック</div><div class='step-desc'>描画モードの一覧が表示される</div></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">通常：そのままの色で表示（デフォルト）</div></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">「Alt+Shift+N/M/S...」ショートカットで素早く切り替えられる</div></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">不透明度と組み合わせると細かい調整ができる</div></div></div>
+</div><div class="callout tip"><div class="callout-icon">👆</div><div class="callout-body"><strong>講師メモ</strong>　描画モードは上のレイヤーの色と下のレイヤーの色を計算式で合成している。どの式を使うかが描画モードの違い。直感的に理解するには実際に試すのが一番。</div></div></div>
+  <div class="section"><div class="sec-header"><div class="sec-num orange">3</div><div class="sec-title">乗算・スクリーン・オーバーレイ</div><div class="sec-time">20〜35分</div></div><p class="body-text">最もよく使う3つの描画モードを覚えましょう。この3つだけで多くの合成表現が作れます。</p><div class="callout info"><div class="callout-icon">💬</div><div class="callout-body"><strong>講師がこう話す</strong> 「乗算は影・スクリーンは光・オーバーレイはコントラスト強調と覚えてください。白は乗算では消える・黒はスクリーンで消えるというルールも大事です。」</div></div><div class="steps">      <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">乗算（Multiply）：白が透明に・暗い色が重なる。影・テクスチャ合成に</div><div class='step-desc'>例：紙テクスチャを乗算で重ねると印刷物風になる</div></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">スクリーン（Screen）：黒が透明に・明るい色が重なる。光・グロー演出に</div><div class='step-desc'>例：フレアや光の素材をスクリーンで重ねると光の演出になる</div></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">オーバーレイ（Overlay）：50%グレーが透明に・コントラストが強調される</div><div class='step-desc'>例：テクスチャを重ねてコントラストを自然に上げる</div></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">ソフトライト（Soft Light）：オーバーレイより柔らかい効果</div></div></div>
+</div><div class="callout tip"><div class="callout-icon">👆</div><div class="callout-body"><strong>講師メモ</strong>　Photoshopで描画モードの数値をマウスホイールでスクロールするとリアルタイムでプレビューできる。全種類を試すのに便利。</div></div></div>
+  <div class="section"><div class="sec-header"><div class="sec-num green">4</div><div class="sec-title">描画モードの実践的な使い方</div><div class="sec-time">35〜45分</div></div><p class="body-text">描画モードを実際のバナー制作でどう使うか、具体的な用途を覚えましょう。</p><div class="callout info"><div class="callout-icon">💬</div><div class="callout-body"><strong>講師がこう話す</strong> 「実務では紙テクスチャを乗算で重ねたり、グラデーションをスクリーンで重ねてグロー感を出したりします。覚えておくと表現の幅がぐっと広がります。」</div></div><div class="steps">      <div class="step"><div class="step-num">1</div><div class="step-body"><div class="step-title">テクスチャ合成：テクスチャ画像を乗算で重ねる</div><div class='step-desc'>背景に紙・コンクリート・布などの質感を追加</div></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body"><div class="step-title">光の演出：白→透明グラデーションをスクリーンで重ねる</div><div class='step-desc'>バナーの一部を光っているように演出</div></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body"><div class="step-title">カラーオーバーレイ：単色のカラーレイヤーをオーバーレイで重ねる</div><div class='step-desc'>写真全体の色調を変えながらテクスチャを保持</div></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body"><div class="step-title">影の演出：黒→透明グラデーションを乗算で重ねる</div><div class='step-desc'>画面の端を暗くしてビネット効果を作る</div></div></div>
+</div><div class="callout tip"><div class="callout-icon">👆</div><div class="callout-body"><strong>講師メモ</strong>　ビネット効果（画面端を暗くする）は乗算の黒グラデーションで作れる。バナー写真に深みと集中力を出す定番テクニック。</div></div></div>
+
+  <div class="section"><div class="sec-header"><div class="sec-num" style="background:var(--ps);">Q</div><div class="sec-title">確認クイズ</div><div class="sec-time">45〜50分</div></div>    <div class="quiz"><div class="quiz-header"><div class="quiz-icon">❓</div><div class="quiz-title">クイズ 1</div></div><div class="quiz-q">乗算（Multiply）モードで白のレイヤーを重ねると？</div><div class="quiz-options">        <div class="quiz-option wrong">A．白くなる</div>
+        <div class="quiz-option correct">B．透明になる（影響しない） ✅</div>
+        <div class="quiz-option wrong">C．黒くなる</div>
+</div></div>
+    <div class="quiz"><div class="quiz-header"><div class="quiz-icon">❓</div><div class="quiz-title">クイズ 2</div></div><div class="quiz-q">光のフレア素材を重ねるときに使う描画モードはどれ？</div><div class="quiz-options">        <div class="quiz-option wrong">A．乗算</div>
+        <div class="quiz-option correct">B．スクリーン ✅</div>
+        <div class="quiz-option wrong">C．覆い焼きカラー</div>
+</div></div>
+    <div class="quiz"><div class="quiz-header"><div class="quiz-icon">❓</div><div class="quiz-title">クイズ 3</div></div><div class="quiz-q">オーバーレイモードで透明に見えるのは何色？</div><div class="quiz-options">        <div class="quiz-option wrong">A．白</div>
+        <div class="quiz-option wrong">B．黒</div>
+        <div class="quiz-option correct">C．50%グレー ✅</div>
+</div></div>
+<div class="callout tip"><div class="callout-icon">✅</div><div class="callout-body"><strong>全問正解できたらOK！</strong></div></div></div>
+  <div class="section"><div class="sec-header"><div class="sec-num" style="background:#888;">✓</div><div class="sec-title">今日のポイント まとめ</div></div><div class="checklist"><div class="checklist-title">📋 今日覚えること チェックリスト</div>      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>乗算</strong>　影・テクスチャ合成。白が透明になる</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>スクリーン</strong>　光・グロー演出。黒が透明になる</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>オーバーレイ</strong>　コントラスト強調。50%グレーが透明</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>ビネット効果</strong>　黒グラデーション+乗算で画面端を暗くする</div></div>
+      <div class="check-item"><div class="check-box"></div><div class="check-text"><strong>描画モードの変更</strong>　レイヤーパネル上部のプルダウン</div></div>
+</div></div>
+  <div class="extra-box"><div class="extra-header"><div class="extra-badge">🚀 EXTRA</div><div class="extra-title">早く終わった人向けの追加課題</div></div>    <div class="extra-item">紙テクスチャを乗算で重ねてバナーを印刷物風に仕上げてみよう。</div>
+    <div class="extra-item">白→透明グラデーションをスクリーンで重ねて光の演出を作ってみよう。</div>
+    <div class="extra-item">全種類の描画モードをマウスホイールで切り替えて効果の違いを確認しよう。</div>
+</div>
+  <div style="height:40px;"></div><div style="text-align:center;color:var(--muted);font-size:13px;padding:24px 0;border-top:1px solid var(--border);">第26回 / 全40回　｜　Photoshop バナー制作コース　©2026</div>
+</div></body><script>
+document.querySelectorAll('.check-box').forEach(function(box) {
+  box.addEventListener('click', function() {
+    this.classList.toggle('checked');
+  });
+});
+</script></html>
